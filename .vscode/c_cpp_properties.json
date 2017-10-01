@@ -1,0 +1,68 @@
+{
+    "configurations": [
+        {
+            "name": "Mac",
+            "includePath": [
+                "/usr/include",
+                "/usr/local/include"
+            ],
+            "browse": {
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": "",
+                "path": [
+                    "/usr/include",
+                    "/usr/local/include",
+                    "${workspaceRoot}"
+                ]
+            },
+            "intelliSenseMode": "clang-x64",
+            "macFrameworkPath": [
+                "/System/Library/Frameworks",
+                "/Library/Frameworks"
+            ]
+        },
+        {
+            "name": "Linux",
+            "includePath": [
+                "/usr/include",
+                "/usr/local/include"
+            ],
+            "browse": {
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": "",
+                "path": [
+                    "/usr/include",
+                    "/usr/local/include",
+                    "${workspaceRoot}"
+                ]
+            },
+            "intelliSenseMode": "clang-x64"
+        },
+        {
+            "name": "Win32",
+            "includePath": [
+                "C:/Program Files (x86)/Microsoft Visual Studio 14.0/VC/include/*",
+                "C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/SoftwareSerial/src/*",
+                "C:/rogram Files (x86)/Arduino/hardware/tools/avr/avr/include/*",
+                "C:/Users/Akinobu/Documents/Arduino/libraries/LCD5110_Graph/*",
+                "C:/Users/Akinobu/Documents/Arduino/libraries/DFPlayer-Mini-mp3-master/*",
+                "C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino/*"
+            ],
+            "browse": {
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": "",
+                "path": [
+                    "C:/Program Files (x86)/Microsoft Visual Studio 14.0/VC/include/*",
+                    "C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/SoftwareSerial/src/*",
+                    "C:/rogram Files (x86)/Arduino/hardware/tools/avr/avr/include/*",
+                    "C:/Users/Akinobu/Documents/Arduino/libraries/LCD5110_Graph/*",
+                    "C:/Users/Akinobu/Documents/Arduino/libraries/DFPlayer-Mini-mp3-master/*",
+                    "C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino/*",
+                    "${workspaceRoot}"
+                ]
+            },
+            "intelliSenseMode": "msvc-x64"
+        }
+    ],
+    "version": 3
+}

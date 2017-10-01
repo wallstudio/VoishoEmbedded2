@@ -1,0 +1,11 @@
+C:\Users\Akinobu\Desktop\新しいフォルダー\ImageToBinary\ImageToBinary\bin\Debug\ImageToBinary.exe.config
+C:\Users\Akinobu\Desktop\新しいフォルダー\ImageToBinary\ImageToBinary\bin\Debug\ImageToBinary.exe
+C:\Users\Akinobu\Desktop\新しいフォルダー\ImageToBinary\ImageToBinary\bin\Debug\ImageToBinary.pdb
+C:\Users\Akinobu\Desktop\新しいフォルダー\ImageToBinary\ImageToBinary\obj\Debug\ImageToBinary.exe
+C:\Users\Akinobu\Desktop\新しいフォルダー\ImageToBinary\ImageToBinary\obj\Debug\ImageToBinary.pdb
+C:\Users\Akinobu\Desktop\Voisho\ImageToBinary\ImageToBinary\bin\Debug\ImageToBinary.exe.config
+C:\Users\Akinobu\Desktop\Voisho\ImageToBinary\ImageToBinary\bin\Debug\ImageToBinary.exe
+C:\Users\Akinobu\Desktop\Voisho\ImageToBinary\ImageToBinary\bin\Debug\ImageToBinary.pdb
+C:\Users\Akinobu\Desktop\Voisho\ImageToBinary\ImageToBinary\obj\Debug\ImageToBinary.csprojResolveAssemblyReference.cache
+C:\Users\Akinobu\Desktop\Voisho\ImageToBinary\ImageToBinary\obj\Debug\ImageToBinary.exe
+C:\Users\Akinobu\Desktop\Voisho\ImageToBinary\ImageToBinary\obj\Debug\ImageToBinary.pdb

@@ -1,0 +1,6 @@
+// 既定の設定とユーザー設定を上書きするには、このファイル内に設定を挿入します
+{
+    "arduino.fqbn": "arduino:avr:nano:cpu=atmega328",
+    "arduino.serialPort": "COM3"//,
+    //"arduino.baudrate": 57600   //嵌ったトコロ，Nano のCLKは Uno の半分だから？
+}

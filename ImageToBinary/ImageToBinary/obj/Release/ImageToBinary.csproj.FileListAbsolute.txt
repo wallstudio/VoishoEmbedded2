@@ -1,0 +1,6 @@
+C:\Users\Akinobu\Desktop\Voisho\ImageToBinary\ImageToBinary\bin\Release\ImageToBinary.exe.config
+C:\Users\Akinobu\Desktop\Voisho\ImageToBinary\ImageToBinary\bin\Release\ImageToBinary.exe
+C:\Users\Akinobu\Desktop\Voisho\ImageToBinary\ImageToBinary\bin\Release\ImageToBinary.pdb
+C:\Users\Akinobu\Desktop\Voisho\ImageToBinary\ImageToBinary\obj\Release\ImageToBinary.exe
+C:\Users\Akinobu\Desktop\Voisho\ImageToBinary\ImageToBinary\obj\Release\ImageToBinary.pdb
+C:\Users\Akinobu\Desktop\Voisho\ImageToBinary\ImageToBinary\obj\Release\ImageToBinary.csprojResolveAssemblyReference.cache

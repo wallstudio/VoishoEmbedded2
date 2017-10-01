@@ -1,0 +1,62 @@
+[
+  {
+    "Sourcefile": "",
+    "Include": "",
+    "Includepath": "C:\\Program Files (x86)\\Arduino\\hardware\\arduino\\avr\\cores\\arduino"
+  },
+  {
+    "Sourcefile": "",
+    "Include": "",
+    "Includepath": "C:\\Program Files (x86)\\Arduino\\hardware\\arduino\\avr\\variants\\eightanaloginputs"
+  },
+  {
+    "Sourcefile": "z:\\Project\\VoishoEmbedded2\\.build\\VoishoEmbedded2\\sketch\\VoishoEmbedded2.ino.cpp",
+    "Include": "LCD5110_Graph.h",
+    "Includepath": "C:\\Users\\Akinobu\\Documents\\Arduino\\libraries\\LCD5110_Graph"
+  },
+  {
+    "Sourcefile": "z:\\Project\\VoishoEmbedded2\\.build\\VoishoEmbedded2\\sketch\\VoishoEmbedded2.ino.cpp",
+    "Include": "SoftwareSerial.h",
+    "Includepath": "C:\\Program Files (x86)\\Arduino\\hardware\\arduino\\avr\\libraries\\SoftwareSerial\\src"
+  },
+  {
+    "Sourcefile": "z:\\Project\\VoishoEmbedded2\\.build\\VoishoEmbedded2\\sketch\\VoishoEmbedded2.ino.cpp",
+    "Include": "EEPROM.h",
+    "Includepath": "C:\\Program Files (x86)\\Arduino\\hardware\\arduino\\avr\\libraries\\EEPROM\\src"
+  },
+  {
+    "Sourcefile": "z:\\Project\\VoishoEmbedded2\\.build\\VoishoEmbedded2\\sketch\\VoishoEmbedded2.ino.cpp",
+    "Include": "",
+    "Includepath": ""
+  },
+  {
+    "Sourcefile": "z:\\Project\\VoishoEmbedded2\\.build\\VoishoEmbedded2\\sketch\\Bitmap.c",
+    "Include": "",
+    "Includepath": ""
+  },
+  {
+    "Sourcefile": "z:\\Project\\VoishoEmbedded2\\.build\\VoishoEmbedded2\\sketch\\Game2D.cpp",
+    "Include": "",
+    "Includepath": ""
+  },
+  {
+    "Sourcefile": "z:\\Project\\VoishoEmbedded2\\.build\\VoishoEmbedded2\\sketch\\QREncode.cpp",
+    "Include": "",
+    "Includepath": ""
+  },
+  {
+    "Sourcefile": "C:\\Users\\Akinobu\\Documents\\Arduino\\libraries\\LCD5110_Graph\\DefaultFonts.c",
+    "Include": "",
+    "Includepath": ""
+  },
+  {
+    "Sourcefile": "C:\\Users\\Akinobu\\Documents\\Arduino\\libraries\\LCD5110_Graph\\LCD5110_Graph.cpp",
+    "Include": "",
+    "Includepath": ""
+  },
+  {
+    "Sourcefile": "C:\\Program Files (x86)\\Arduino\\hardware\\arduino\\avr\\libraries\\SoftwareSerial\\src\\SoftwareSerial.cpp",
+    "Include": "",
+    "Includepath": ""
+  }
+]

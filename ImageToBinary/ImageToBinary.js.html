@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ImageToBinary</title>
+    </head>
+<body>
+    <div>
+        <input type="file" id="selectFile" accept='image/*' />
+    </div>
+    <div>
+        <img id="imagePreview" />
+    </div>
+    <div>
+        <canvas id="canvas"></canvas>
+    </div>
+    <div>
+        <textarea id="source"></textarea>
+    </div>
+    <script>
+(function(){
+    let ofd = document.getElementById("selectFile");
+    ofd.addEventListener("change", (e)=>{
+        let file = e.target.files;
+        //Preview
+        (function(file){
+            let reader = new FileReader();
+            reader.onload = ()=>{
+                document.getElementById("imagePreview").setAttribute("src",reader.result);
+                let img = new Image();
+                img.src = reader.result;
+                let canvas = document.getElementById("canvas");
+                canvas.width = img.width;
+                canvas.height = img.height;
+                let context = canvas.getContext("2d");
+                context.drawImage(img,0,0);
+                let src = context.getImageData(0,0,img.width,img.height);
+                let buf = new Array(img.width*Math.ceil(img.height/8));
+                for(let i=0;i<Math.ceil(img.height/8);i++){ //Each band(every8)
+                    for(let j=0;j<img.width;j++){ //Each poll(every4)
+                        let byte = 0;
+                        for(let k=0;k<8;k++){ //Each pxcel
+                            let p = img.width*4*8*i + 4*j + img.width*4*k;
+                            let r = src.data[p+0];
+                            let g = src.data[p+1];
+                            let b = src.data[p+2];
+                            let a = src.data[p+3];
+                            let l = (r+g+b)/3*a/255;
+                            if(l<127){
+                                byte += 1<<k;
+                            }
+                        }
+                        buf[img.width*i+j] = "0x" + byte.toString(16);
+                    }
+                }
+                let str = (function(){
+                    let col = new Array(Math.ceil(buf.length/16));
+                    for(let i=0;i<buf.length/16;i++){
+                        col[i] = buf.slice(16*i,16*i+16).join(", ");
+                    }
+                    return col.join(",\n");
+                }());
+                str = "const uint8_t "+ file.name.replace(/\..*/,"")+"[] PROGMEM={\n"
+                    + str + "\n}; //" + buf.length ;
+                document.getElementById("source").value = str;
+            };
+            reader.readAsDataURL(file);
+        }(file[0]));
+    });
+}());
+    </script>
+</body>
+</html>
