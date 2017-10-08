@@ -23,12 +23,13 @@
 #define SCREEN_BUF_SYSE 504
 #define SCREEN_WIDTH    84
 #define SCREEN_HEIGHT   48
-#define CLK_PIN  6
+#define CLK_PIN  4
 #define DIN_PIN  5
-#define DC_PIN   4
-#define RST_PIN  2
-#define CE_PIN   3
-#define CLE_PIN  8
+#define DC_PIN   6
+#define RST_PIN  8
+#define CE_PIN   7
+#define LED_PIN  2
+#define FLIP_LED 1
 #define BEEP_PIN 13
 extern uint8_t SmallFont[];
 GameLCD screen(SCREEN_WIDTH, SCREEN_HEIGHT, SCREEN_BUF_SYSE, CLK_PIN, DIN_PIN, DC_PIN, RST_PIN, 12);
@@ -77,10 +78,10 @@ void mp3_play(uint8_t idx){
 //............................................................
 // I/O .......................................................
 //............................................................
-#define I0 16
+#define I0 14
 #define I1 15
-#define I2 14
-#define O0 CLE_PIN
+#define I2 16
+#define O0 LED_PIN
 //............................................................
 // GameDefine ................................................
 //............................................................
@@ -205,7 +206,7 @@ void BtnDetectAll(){
 }
 // Sleep
 void Sleep(){
-  digitalWrite(O0, LOW);
+  digitalWrite(O0, FLIP_LED ^ LOW);
   pinMode(O0, INPUT);
   Save();
   wdt_reset();
@@ -351,9 +352,9 @@ void InitIO(){
   pinMode(I1,INPUT_PULLUP);
   pinMode(I2,INPUT_PULLUP);
   if(Luminance > 0){
-    digitalWrite(O0, HIGH);
+    digitalWrite(O0, FLIP_LED ^ HIGH);
   }else{
-    digitalWrite(O0, LOW);
+    digitalWrite(O0, FLIP_LED ^ LOW);
   }
 }
 void CheckFactorySign(){
@@ -829,9 +830,9 @@ bool Config(uint8_t *timer, uint8_t selectionCount, uint8_t *confNo, int8_t *mod
       InitAudio();
       mp3_play(SE_BTN_OK);
       if(Luminance > 0){
-        digitalWrite(O0, HIGH);
+        digitalWrite(O0, FLIP_LED ^ HIGH);
       }else{
-        digitalWrite(O0, LOW);
+        digitalWrite(O0, FLIP_LED ^ LOW);
       }
       *mode = -1;
     }
