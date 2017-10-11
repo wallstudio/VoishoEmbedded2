@@ -55,7 +55,7 @@ namespace YukaKurageControl
             {
                 hex = Process.Start("cmd", $"/C {dir}\\HackingTerminal.exe hex");
                 code = Process.Start("cmd", $"/C {dir}\\HackingTerminal.exe code");
-                Thread.Sleep(100);
+                Thread.Sleep(1000);
                 MoveWindow(hex.MainWindowHandle, 100, screenHeight - 600 - 10, 800, 600, 1);
                 MoveWindow(code.MainWindowHandle, 10, 10, 800, 600, 1);
             });
@@ -85,10 +85,11 @@ namespace YukaKurageControl
             // ゆかりさんどいてくれ
             Task.Run(() =>
             {
-                for (int i = 0; i < 6; i++)
+                for (int i = 0; i < 100; i++)
                 {
                     Thread.Sleep(1000);
                     MoveWindow(voiceroid.MainWindowHandle, screenWidth / 2, screenHeight - 20, 800, 600, 1);
+                    if (hex.HasExited && code.HasExited && VoiceroidTServer.Ready) { break; }
                 }
             });
             // Voiceroid talk に丸投げしてみて例外が帰ってこなければ起動完了

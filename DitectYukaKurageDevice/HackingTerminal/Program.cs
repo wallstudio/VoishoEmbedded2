@@ -34,9 +34,22 @@ namespace HackingTerminal
 
         private static void Binary(int deci, string fomat)
         {
+            var entryTime = DateTime.Now;
             var rand = new Random();
-            for (int i = 0; i < 1100; i++)
+            int loopEnd = 1100;
+            for (int i = 0; i < loopEnd; i++)
             {
+                // 遅いPCの調整（大体～50sになるように）
+                var ds = 50.0f / loopEnd;
+
+
+                while(ds * i < (DateTime.Now - entryTime).Seconds)
+                {
+                    //時間がたちすぎてたらiを速めて調整
+                    i++;
+                    Console.WriteLine("Intrupterd...");
+                }
+
                 Thread.Sleep(rand.Next(10, 60));
                 for (int j = 0; j < rand.Next(1,10); j++)
                 {
