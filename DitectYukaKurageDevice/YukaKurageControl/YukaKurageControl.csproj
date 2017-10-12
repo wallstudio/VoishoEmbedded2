@@ -122,4 +122,9 @@
     <None Include="Resources\Splash.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>del error.log
+del talk.log
+del voice.log</PreBuildEvent>
+  </PropertyGroup>
 </Project>

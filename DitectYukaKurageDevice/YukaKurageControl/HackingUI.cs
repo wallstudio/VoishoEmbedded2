@@ -37,6 +37,7 @@ namespace YukaKurageControl
         public HackingUI()
         {
             InitializeComponent();
+            WriteErrorLog("ランチャーフォームのスタート(NO PROBLEM)");
         }
         
         private void HackingUI_Load(object sender, EventArgs e)
@@ -152,6 +153,8 @@ namespace YukaKurageControl
                 }
                 Console.WriteLine("VoiceroidTServer is completed.");
             });
+            // マニュアルトークテーブルの読みこみ
+            Task.Run(()=>Yukakurage.LoadManualTalk());
         }
 
         private void voiceroidTalkerHook_Tick(object sender, EventArgs e)
@@ -212,6 +215,7 @@ namespace YukaKurageControl
             try
             {
                 new VoiceroidTClient(args);
+                WriteVoiceLog(args);
             }
             catch (Exception ee)
             {
@@ -245,12 +249,12 @@ namespace YukaKurageControl
             }
         }
         
-        public void WriteErrorLog(object msg)
+        public static void WriteErrorLog(object msg)
         {
 
             try
             {
-                using (var sw = new StreamWriter("error.txt", true, Encoding.UTF8))
+                using (var sw = new StreamWriter("error.log", true, Encoding.UTF8))
                 {
                     sw.WriteLine($"{DateTime.Now} {msg.ToString()}");
                 }
@@ -258,6 +262,21 @@ namespace YukaKurageControl
             catch
             {
                 MessageBox.Show("エラーログの書き込みエラーです．\r\n例外\r\n"+msg.ToString());
+            }
+        }
+        public static void WriteVoiceLog(string msg)
+        {
+
+            try
+            {
+                using (var sw = new StreamWriter("voice.log", true, Encoding.UTF8))
+                {
+                    sw.WriteLine($"{DateTime.Now} {msg.ToString()}");
+                }
+            }
+            catch
+            {
+
             }
         }
     }
