@@ -35,14 +35,14 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.CopyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ExitToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.yukamakiiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.contactToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ExitToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.sendMessage = new System.Windows.Forms.Button();
             this.talkPanel = new System.Windows.Forms.PictureBox();
             this.yukaKurageMessage = new System.Windows.Forms.Label();
             this.playerMessage = new System.Windows.Forms.TextBox();
-            this.contactToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.talkPanel)).BeginInit();
@@ -82,35 +82,42 @@
             this.contactToolStripMenuItem,
             this.ExitToolStripMenuItem1});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(153, 136);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(113, 114);
             // 
             // CopyToolStripMenuItem
             // 
             this.CopyToolStripMenuItem.Name = "CopyToolStripMenuItem";
-            this.CopyToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.CopyToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
             this.CopyToolStripMenuItem.Text = "コピー";
             this.CopyToolStripMenuItem.Click += new System.EventHandler(this.CopyToolStripMenuItem_Click);
-            // 
-            // ExitToolStripMenuItem1
-            // 
-            this.ExitToolStripMenuItem1.Name = "ExitToolStripMenuItem1";
-            this.ExitToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
-            this.ExitToolStripMenuItem1.Text = "終了";
-            this.ExitToolStripMenuItem1.Click += new System.EventHandler(this.ExitToolStripMenuItem1_Click);
             // 
             // yukamakiiToolStripMenuItem
             // 
             this.yukamakiiToolStripMenuItem.Name = "yukamakiiToolStripMenuItem";
-            this.yukamakiiToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.yukamakiiToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
             this.yukamakiiToolStripMenuItem.Text = "ゆかマキ";
             this.yukamakiiToolStripMenuItem.Click += new System.EventHandler(this.YukamakiToolStripMenuItem_Click);
             // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
             this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.AboutToolStripMenuItem_Click);
+            // 
+            // contactToolStripMenuItem
+            // 
+            this.contactToolStripMenuItem.Name = "contactToolStripMenuItem";
+            this.contactToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
+            this.contactToolStripMenuItem.Text = "開発者";
+            this.contactToolStripMenuItem.Click += new System.EventHandler(this.ContactToolStripMenuItem_Click);
+            // 
+            // ExitToolStripMenuItem1
+            // 
+            this.ExitToolStripMenuItem1.Name = "ExitToolStripMenuItem1";
+            this.ExitToolStripMenuItem1.Size = new System.Drawing.Size(112, 22);
+            this.ExitToolStripMenuItem1.Text = "終了";
+            this.ExitToolStripMenuItem1.Click += new System.EventHandler(this.ExitToolStripMenuItem1_Click);
             // 
             // sendMessage
             // 
@@ -140,6 +147,7 @@
             // 
             this.yukaKurageMessage.AutoSize = true;
             this.yukaKurageMessage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.yukaKurageMessage.ContextMenuStrip = this.contextMenuStrip1;
             this.yukaKurageMessage.Font = new System.Drawing.Font("メイリオ", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.yukaKurageMessage.Location = new System.Drawing.Point(43, 77);
             this.yukaKurageMessage.Name = "yukaKurageMessage";
@@ -158,13 +166,6 @@
             this.playerMessage.Text = "あなたのメッセージを入力してね";
             this.playerMessage.MouseClick += new System.Windows.Forms.MouseEventHandler(this.playerMessage_MouseClick);
             this.playerMessage.KeyDown += new System.Windows.Forms.KeyEventHandler(this.playerMessage_KeyDown);
-            // 
-            // contactToolStripMenuItem
-            // 
-            this.contactToolStripMenuItem.Name = "contactToolStripMenuItem";
-            this.contactToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.contactToolStripMenuItem.Text = "開発者";
-            this.contactToolStripMenuItem.Click += new System.EventHandler(this.ContactToolStripMenuItem_Click);
             // 
             // Yukakurage
             // 
