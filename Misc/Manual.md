@@ -1,4 +1,4 @@
-# けだまっち 取り扱いマニュアル ![](img/gyun1.png "") 
+# ゆかクラッチ 取り扱いマニュアル ![](img/gyun1.png "") 
 
 常に最新版を確認してください．  
 [https://github.com/wallstudio/VoishoEmbedded2/blob/master/Misc/Manual.md](https://github.com/wallstudio/VoishoEmbedded2/blob/master/Misc/Manual.md)  
@@ -15,7 +15,7 @@
     &copy;2017 WallStudio  
     私的利用の範囲を逸脱した利用を禁じます．  
     「弦巻マキ」および「結月ゆかり」は株式会社AHSのキャラクターです．  
-    けだまっちは申請名「VoishoEmbedded2」としてこの作品は株式会社AHSにて許諾を受けています．  
+    ゆかクラッチは申請名「VoishoEmbedded2」としてこの作品は株式会社AHSにて許諾を受けています．  
     「ゆかクラゲ」は [@BOSS\_CAU](https://twitter.com/BOSS_CAU) 氏による結月ゆかりの二次創作作品です．  
     「ゆかクラゲ」二次利用は [@BOSS\_CAU](https://twitter.com/BOSS_CAU) 氏に許諾を受けています．
 
@@ -78,7 +78,7 @@
 1.  正面のボタンのいずれかを長押し（～10秒）するとSLEEPモードから復帰します．
 ![](http:// "")
 ### バックライト
-けだまっちは青色のバックライトを搭載しています．「MENUE → ｾｯﾃｲ → LIGHT」でON/OFFが出来ます．
+ゆかクラッチは青色のバックライトを搭載しています．「MENUE → ｾｯﾃｲ → LIGHT」でON/OFFが出来ます．
 ### 電池交換
 1. 使用する乾電池は 6LR61 または 6F22です．これはコンビニや100円ショップでも売られている四角い9Vのものです．（6V以上の電圧が得られるようにしてください）
 ![](http:// "")
@@ -92,7 +92,7 @@
 ![](http:// "")
 ### 外部電源
 USBから電源を取ることが出来ます．端子はMini USBです．これは一般的なスマートフォンの端子（Micro USB）とは互換性が無いので注意してください．Mini USBケーブルは家電量販店や100円ショップでも手に入ります．  
-EX版は足をけだまきバッテリーに挿すことでも給電できます．  
+EX版は足をけだマキバッテリーに挿すことでも給電できます．  
 ※乾電池がつながっているときは乾電池を外して繋げてください．  
 ### 操作
 ボタンは3つあり，画面の下部に対応した位置にそれぞれのボタンの意味が表示されます．（例: HOME画面では，右ボタンがSLEEP，中央ボタンがMENUE，左ボタンは無効になっています）
@@ -176,9 +176,9 @@ HOME画面の右上に表示される「♥」が現在の好感度です．最�
 ゆかクラッチは十分な品質管理ができておりません．個体によってその品質が大きく異なります．**これは不良ではありません**．ソフトウェアの**パッチも原則作成しません**．お渡しする際の状態が全てです．
 
 ゆかクラッチで怪我及びその他の損害を被った場合でも製作者が**補償することはできません**．  
-けだまっちそのものの**アフターサポートは基本的に行えません**．一応，ご連絡いただければお答えするかもしれませんが，これは必ずできるものではありません．
+ゆかクラッチそのものの**アフターサポートは基本的に行えません**．一応，ご連絡いただければお答えするかもしれませんが，これは必ずできるものではありません．
 
-ゆかクラッチが故障した場合の修理は**無償・有償含め行えません**．設計書は公開（[https://github.com/wallstudio/VoishoEmbedded (Github)](https://github.com/wallstudio/VoishoEmbedded)）されているので，ご自身で修理する助けになるかもしれません．
+ゆかクラッチが故障した場合の修理は**無償・有償含め行えません**．設計書は公開（[https://github.com/wallstudio/VoishoEmbedded2 (Github)](https://github.com/wallstudio/VoishoEmbedded2)）されているので，ご自身で修理する助けになるかもしれません．
 
 ## 7. アップデート
 <本体>  
@@ -187,7 +187,7 @@ HOME画面の右上に表示される「♥」が現在の好感度です．最�
 PCで [https://www.arduino.cc/en/main/software](https://www.arduino.cc/en/main/software) よりArduino IDEをダウンロードします．（Arduinoに寄付をしない場合「Just download」を選べばダウンロードが始まります）
 2. Arduino IDEのインストーラからインストールを実行します．  
 ![](img/ardIns.png "") 
-3. Mini USBケーブルでPCとけだまっちをつなぎます．  
+3. Mini USBケーブルでPCとゆかクラッチをつなぎます．  
 PCに認識されない場合，CH340ドライバをインストールしてください．
 4. ソースコードのダウンロード  
 [https://github.com/wallstudio/VoishoEmbedded](https://github.com/wallstudio/VoishoEmbedded) よりプロジェクトをダウンロードします．
