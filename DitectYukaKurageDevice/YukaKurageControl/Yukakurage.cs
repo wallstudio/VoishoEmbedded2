@@ -134,7 +134,7 @@ namespace YukaKurageControl
             playerMessage.Text = "";
             var respons = GetBotTalk(playerText);
             VoiceMix(respons);
-            WriteTalkLog($"あなゆかクラゲ： {respons}");
+            WriteTalkLog($"ゆかクラゲ： {respons}");
             chatLog.Add($"ゆかクラゲ： {respons.Substring(0, Math.Min(respons.Length, 25))}");
             while(chatLog.Count() > 9)
             {
