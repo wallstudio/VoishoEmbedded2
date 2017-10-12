@@ -123,8 +123,7 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PreBuildEvent>del error.log
-del talk.log
-del voice.log</PreBuildEvent>
+    <PreBuildEvent>del *.log
+copy ..\..\..\HackingTerminal\bin\Release\HackingTerminal.exe</PreBuildEvent>
   </PropertyGroup>
 </Project>

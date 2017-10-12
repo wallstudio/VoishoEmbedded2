@@ -120,4 +120,8 @@
     </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>del *.log
+copy ..\..\..\ctof\bin\Release\ctof.exe"</PreBuildEvent>
+  </PropertyGroup>
 </Project>

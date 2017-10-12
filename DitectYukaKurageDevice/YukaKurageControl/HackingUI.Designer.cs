@@ -59,6 +59,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "HackingUI";
             this.Opacity = 0D;
+            this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "HackingUI";
             this.Load += new System.EventHandler(this.HackingUI_Load);

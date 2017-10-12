@@ -35,7 +35,7 @@ namespace DitectYukaKurageDevice
         }
         private void AboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Process.Start("https://github.com/wallstudio/VoishoEmbedded/blob/master/Misc/Manual.md");
+            Process.Start("https://github.com/wallstudio/VoishoEmbedded2/");
         }
         private void ContactToolStripMenuItem_Click(object sender, EventArgs e)
         {

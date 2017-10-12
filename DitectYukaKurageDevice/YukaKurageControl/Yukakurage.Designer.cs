@@ -33,11 +33,18 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.CopyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ExitToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.yukamakiiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sendMessage = new System.Windows.Forms.Button();
             this.talkPanel = new System.Windows.Forms.PictureBox();
             this.yukaKurageMessage = new System.Windows.Forms.Label();
             this.playerMessage = new System.Windows.Forms.TextBox();
+            this.contactToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.contextMenuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.talkPanel)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,6 +63,7 @@
             // 
             this.pictureBox1.BackgroundImage = global::YukaKurageControl.Properties.Resources.im0;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox1.ContextMenuStrip = this.contextMenuStrip1;
             this.pictureBox1.Location = new System.Drawing.Point(597, 28);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(320, 320);
@@ -64,6 +72,45 @@
             this.pictureBox1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form2_MouseDown);
             this.pictureBox1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Form2_MouseMove);
             this.pictureBox1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Form2_MouseUp);
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.CopyToolStripMenuItem,
+            this.yukamakiiToolStripMenuItem,
+            this.aboutToolStripMenuItem,
+            this.contactToolStripMenuItem,
+            this.ExitToolStripMenuItem1});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(153, 136);
+            // 
+            // CopyToolStripMenuItem
+            // 
+            this.CopyToolStripMenuItem.Name = "CopyToolStripMenuItem";
+            this.CopyToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.CopyToolStripMenuItem.Text = "コピー";
+            this.CopyToolStripMenuItem.Click += new System.EventHandler(this.CopyToolStripMenuItem_Click);
+            // 
+            // ExitToolStripMenuItem1
+            // 
+            this.ExitToolStripMenuItem1.Name = "ExitToolStripMenuItem1";
+            this.ExitToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.ExitToolStripMenuItem1.Text = "終了";
+            this.ExitToolStripMenuItem1.Click += new System.EventHandler(this.ExitToolStripMenuItem1_Click);
+            // 
+            // yukamakiiToolStripMenuItem
+            // 
+            this.yukamakiiToolStripMenuItem.Name = "yukamakiiToolStripMenuItem";
+            this.yukamakiiToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.yukamakiiToolStripMenuItem.Text = "ゆかマキ";
+            this.yukamakiiToolStripMenuItem.Click += new System.EventHandler(this.YukamakiToolStripMenuItem_Click);
+            // 
+            // aboutToolStripMenuItem
+            // 
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.aboutToolStripMenuItem.Text = "About";
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.AboutToolStripMenuItem_Click);
             // 
             // sendMessage
             // 
@@ -79,6 +126,7 @@
             // talkPanel
             // 
             this.talkPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.talkPanel.ContextMenuStrip = this.contextMenuStrip1;
             this.talkPanel.Location = new System.Drawing.Point(31, 63);
             this.talkPanel.Name = "talkPanel";
             this.talkPanel.Size = new System.Drawing.Size(543, 285);
@@ -111,6 +159,13 @@
             this.playerMessage.MouseClick += new System.Windows.Forms.MouseEventHandler(this.playerMessage_MouseClick);
             this.playerMessage.KeyDown += new System.Windows.Forms.KeyEventHandler(this.playerMessage_KeyDown);
             // 
+            // contactToolStripMenuItem
+            // 
+            this.contactToolStripMenuItem.Name = "contactToolStripMenuItem";
+            this.contactToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.contactToolStripMenuItem.Text = "開発者";
+            this.contactToolStripMenuItem.Click += new System.EventHandler(this.ContactToolStripMenuItem_Click);
+            // 
             // Yukakurage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -138,6 +193,7 @@
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Form2_MouseMove);
             this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Form2_MouseUp);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.contextMenuStrip1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.talkPanel)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -152,5 +208,11 @@
         private System.Windows.Forms.PictureBox talkPanel;
         private System.Windows.Forms.Label yukaKurageMessage;
         private System.Windows.Forms.TextBox playerMessage;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem CopyToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ExitToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem yukamakiiToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem contactToolStripMenuItem;
     }
 }

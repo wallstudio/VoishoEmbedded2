@@ -77,6 +77,7 @@ namespace YukaKurageControl
                     if (i.MainModule.FileName.Contains("Yukari"))
                     {
                         voiceroid = i;
+                        InstalledVoicceroid = true;
                         break;
                     }
                 }
@@ -96,7 +97,7 @@ namespace YukaKurageControl
                             voiceroid = Process.Start(voiceroidPath);
                         }catch (Exception ee)
                         {
-                            InstalledVoicceroid = false;
+                            //InstalledVoicceroid = false;
                             WriteErrorLog("VOICEROID起動例外");
                             WriteErrorLog(ee);
                         }

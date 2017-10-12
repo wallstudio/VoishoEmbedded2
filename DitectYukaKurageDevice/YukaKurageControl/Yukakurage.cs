@@ -72,6 +72,28 @@ namespace YukaKurageControl
         {
             mouseDowned = false;
         }
+        private void CopyToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var cpt = new Thread(s => { Clipboard.SetText(s.ToString()); });
+            cpt.SetApartmentState(ApartmentState.STA);
+            cpt.Start(yukaKurageMessage.Text);
+        }
+        private void ExitToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+        private void YukamakiToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://www.pixiv.net/search.php?s_mode=s_tag_full&word=%E3%82%86%E3%81%8B%E3%83%9E%E3%82%AD");
+        }
+        private void AboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://github.com/wallstudio/VoishoEmbedded2/");
+        }
+        private void ContactToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://twitter.com/yukawallstudio");
+        }
         #endregion
 
         #region Logic
@@ -209,6 +231,7 @@ namespace YukaKurageControl
             }
         }
         #endregion
+
     }
 
 }

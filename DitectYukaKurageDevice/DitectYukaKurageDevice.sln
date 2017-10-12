@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YukaKurageControl", "YukaKu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HackingTerminal", "HackingTerminal\HackingTerminal.csproj", "{C0109BC2-0EE2-400D-966E-A91B296E46FD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ctof", "ctof\ctof.csproj", "{FC9A62FD-919D-4485-B905-63F0B7E0BF8A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{C0109BC2-0EE2-400D-966E-A91B296E46FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C0109BC2-0EE2-400D-966E-A91B296E46FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C0109BC2-0EE2-400D-966E-A91B296E46FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC9A62FD-919D-4485-B905-63F0B7E0BF8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC9A62FD-919D-4485-B905-63F0B7E0BF8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC9A62FD-919D-4485-B905-63F0B7E0BF8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC9A62FD-919D-4485-B905-63F0B7E0BF8A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
